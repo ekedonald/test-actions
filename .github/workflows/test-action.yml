@@ -7,6 +7,11 @@ jobs:
     steps:
     - name: Print Greeting
       run: echo "Hello Ikenna"
-      
+
     - name: Print Goodbye
       run: echo "Goodbye Ikenna"
+
+    - name: Print Twos
+      run: |
+        echo "2"
+        echo "Loosely"
