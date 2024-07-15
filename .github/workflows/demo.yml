@@ -3,10 +3,8 @@ on:
   push:
     branches:
       - main
-      - dev
 jobs:
   test:
-    environment: testing
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
