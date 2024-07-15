@@ -1,6 +1,7 @@
 name: Deploy Project
 on:
   pull_request:
+    types: [closed]
     branches:
     - 'release/**'
 jobs:
