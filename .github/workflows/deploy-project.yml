@@ -1,9 +1,5 @@
 name: Deploy Project
-on:
-  pull_request:
-    types: [closed]
-    branches:
-    - 'release/**'
+on: workflow_dispatch
 jobs:
   testing:
     runs-on: ubuntu-latest
