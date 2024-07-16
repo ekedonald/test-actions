@@ -57,5 +57,3 @@ jobs:
         run: ls -l
       - name: Deploy
         run: echo "Deploying..."
-      - name: test aws cli
-        run: aws configure
