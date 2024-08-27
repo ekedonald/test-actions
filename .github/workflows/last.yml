@@ -32,4 +32,4 @@ jobs:
     steps:
       - name: Output information
         run: |        
-          echo "..."
+          echo "......"
