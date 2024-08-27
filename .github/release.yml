@@ -12,5 +12,20 @@ changelog:
       labels:
         - "*"
 template: |
-  ## Whats's Changed
-  $CHANGES
+  ## Release v$RESOLVED_VERSION 🚀
+
+  ## Breaking Changes 🛠
+  $CHANGES_BY_CATEGORY(Breaking Changes 🛠)
+
+  ## Exciting New Features 🎉
+  $CHANGES_BY_CATEGORY(Exciting New Features 🎉)
+
+  ## Other Changes
+  $CHANGES_BY_CATEGORY(Other Changes)
+
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+
+  ## New Contributors 👏
+  $CONTRIBUTORS
+
+  Thank you to all our contributors for making this release possible!
