@@ -11,3 +11,6 @@ changelog:
     - title: Other Changes
       labels:
         - "*"
+template: |
+  ## Whats's Changed
+  $CHANGES
