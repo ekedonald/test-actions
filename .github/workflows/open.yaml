@@ -17,3 +17,5 @@ jobs:
         aws s3api create-bucket \
         --bucket nimbletendencies31vs \
         --region us-east-1
+    - name: delete the bucket
+      run: aws s3api delete-bucket --bucket nimbletendencies31vs --region us-east-1
