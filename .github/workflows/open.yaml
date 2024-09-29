@@ -16,5 +16,4 @@ jobs:
       run: |
         aws s3api create-bucket \
         --bucket nimbletendencies31vs \
-        --region us-east-1 \
-        --create-bucket-configuration LocationConstraint=us-east-1
+        --region us-east-1
