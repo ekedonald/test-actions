@@ -1,0 +1,20 @@
+name: Test OpenID
+on: workflow_dispatch
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+    - name: configure aws credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: ${{secrets.aws_connect}}
+        aws-region: us-east-1
+    - name: create an s3 bucket
+      run: |
+        aws s3api create-bucket \
+        --bucket nimbletendencies31vs \
+        --region us-east-1 \
+        --create-bucket-configuration LocationConstraint=us-east-1
